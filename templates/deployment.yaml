@@ -22,7 +22,7 @@ spec:
       volumes:
           - name: server-data
             persistentVolumeClaim:
-              claimName: {{ default (include "teamcity.fullname" .) }}-server-data
+              claimName: server-data
       containers:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
