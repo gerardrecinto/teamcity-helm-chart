@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: server-data
+  name: agent-data
   labels:
     app: data
 spec:
